@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Bengaluru House Price Predictor</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="app.js"></script>
+      <link rel="stylesheet" href="app.css">
+   </head>
+   <body>
+      <div class="backgroundStyle02">
+         <h2 class="titleStyle02">Bengaluru House Price Predictor</h2>
+         <div class="form-group">
+             <h2>Location</h2>
+            <select class="location" name="location" id="uiLocations" >
+               <option >Location</option>
+            </select>
+         </div>
+         <div class="form-group">
+               <h2>Area (Square Feet)</h2>
+             <input class="area"  type="text" id="uiSqft"  name="Squareft" >
+         </div>
+            <div class="form-group">
+                  <select class="bhk"  tabindex="-98">
+                     <option value="Bedroom">Bedroom</option>
+                     <option value="1" name="uiBHK">1</option>
+                     <option value="2" name="uiBHK">2</option>
+                     <option value="3" name="uiBHK">3</option>
+                     <option value="4" name="uiBHK">4</option>
+                     <option value="5" name="uiBHK">5</option>
+                  </select>
+            </div>
+         <div class="form-group">
+                  <select class="bath"  tabindex="-98">
+                     <option value="Bathroom">Bathroom</option>
+                     <option value="1" name="uiBathrooms">1</option>
+                     <option value="2" name="uiBathrooms">2</option>
+                     <option value="3" name="uiBathrooms">3</option>
+                     <option value="4" name="uiBathrooms">4</option>
+                     <option value="5" name="uiBathrooms">5</option>
+                  </select>
+            </div>
+          <div class="form-group">
+         <button  onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+         <div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+      </div>
+      </div>
+   </body>
+</html>
